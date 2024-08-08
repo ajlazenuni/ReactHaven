@@ -11,38 +11,85 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    align-self: flex-start;
 }
 
 .back-button:hover {
     background-color: #1e5a31;
 }
 
-.waiter-personal-details, .waiter-job-details, .performance-metrics {
-    margin-bottom: 20px;
+.waiter-details-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.waiter-left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.waiter-personal-details, .waiter-job-details {
     padding: 20px;
-    background-color: #e9ecef;
+    background-color: #dff0d8;
     border-radius: 5px;
 }
 
-.waiter-personal-details .profile-picture {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
+.waiter-personal-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.waiter-personal-details .profile-picture img {
-    border-radius: 5px;
+.profile-picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    border-radius: 5px; /* Change to square corners */
     width: 150px;
     height: 150px;
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
 }
 
-.waiter-personal-details .details, .waiter-job-details, .performance-metrics {
-    display: inline-block;
-    vertical-align: top;
+.profile-picture img:hover {
+    transform: scale(1.2); /* Zoom effect */
 }
 
-.details h2, .waiter-job-details h2, .performance-metrics h2 {
-    margin-top: 0;
+.details {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
 }
 
+.details p {
+    margin: 5px 0;
+}
 
+.waiter-job-details, .performance-metrics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.performance-metrics {
+    flex: 1;
+    padding: 20px;
+    background-color: #dff0d8;
+    border-radius: 5px;
+}
+
+.performance-metrics p {
+    margin: 0;
+}
