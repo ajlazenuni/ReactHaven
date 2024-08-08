@@ -1,0 +1,48 @@
+.waiter-details-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.back-button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #236c3d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #1e5a31;
+}
+
+.waiter-personal-details, .waiter-job-details, .performance-metrics {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.waiter-personal-details .profile-picture {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.waiter-personal-details .profile-picture img {
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.waiter-personal-details .details, .waiter-job-details, .performance-metrics {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.details h2, .waiter-job-details h2, .performance-metrics h2 {
+    margin-top: 0;
+}
+
+

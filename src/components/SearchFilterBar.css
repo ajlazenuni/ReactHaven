@@ -1,0 +1,24 @@
+.search-filter-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-filter-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 350px;
+}
+
+.search-filter-bar {
+    padding: 10px;
+    text-align: center;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

@@ -1,0 +1,27 @@
+.actions .view-button,
+.actions .edit-button,
+.actions .delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 16px;
+    padding: 0;
+    outline: none;
+}
+
+.actions .view-button:hover {
+    color: #007bff; /* Blue color for view button hover */
+}
+
+.actions .edit-button:hover {
+    color: #ffc107; /* Yellow color for edit button hover */
+}
+
+.actions .delete-button:hover {
+    color: #dc3545; /* Red color for delete button hover */
+}
+
+.actions .view-button {
+    display: inline;
+}

@@ -1,0 +1,105 @@
+.waiter-list {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+  
+}
+
+.waiter-list-header,
+.waiter-row {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.waiter-list-header {
+    background-color: #236c3d;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.waiter-row {
+    background-color: #e9ecef;
+}
+
+.waiter-row:nth-child(even) {
+    background-color: #dff0d8;
+}
+
+.waiter-list-header span,
+.waiter-row span {
+    flex: 1;
+    text-align: center;
+}
+
+.waiter-list-header span:nth-child(1),
+.waiter-row span:nth-child(1) {
+    flex: 0.5;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+
+.actions .edit-button:hover {
+    color: #ffc107;
+}
+
+.actions .delete-button:hover {
+    color: #dc3545;
+}
+.actions .view-button,
+.actions .edit-button,
+.actions .delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 16px;
+
+}
+
+.actions .view-button:hover {
+    color: #007bff; 
+}
+
+
+
+.actions .view-button {
+    display: inline;
+}
+
+
+
+@media (max-width: 768px) {
+    .waiter-list-header span,
+    .waiter-row span {
+        flex: 1 1 100%;
+        text-align: left;
+    }
+
+    .actions {
+        justify-content: flex-start;
+    }
+}
+.icon-square {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #236c3d; 
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.waiter-list-header span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.waiter-row span {
+    margin-right: 10px;
+}
